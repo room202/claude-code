@@ -22,7 +22,7 @@ claude
 
 特定のフォルダで`claude`コマンドの実行に失敗する場合、下記ファイルを削除すると起動した
 
-フォルダ : `C:\Users\%USERPROFILE%`
+フォルダ : `C:\Users\%USERNAME%`
 
 ファイル : `.claude.json`と`.claude.json.backup`
 
