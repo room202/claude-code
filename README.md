@@ -20,11 +20,11 @@ claude
 
 ## 起動失敗時の備忘録
 
-特定のフォルダで`claude`コマンドの実行に失敗する場合、下記ファイルを削除すると起動した
+特定のフォルダで`claude`コマンドの実行に失敗する場合、下記対象ファイルを削除すると起動した
 
-フォルダ : `C:\Users\%USERNAME%`
+対象ファイルがあるフォルダ : `C:\Users\%USERNAME%`
 
-ファイル : `.claude.json`と`.claude.json.backup`
+対象ファイル : `.claude.json`と`.claude.json.backup`
 
 ## VSCodeの拡張機能
 
