@@ -18,6 +18,13 @@ npm install -g @anthropic-ai/claude-code
 claude
 ```
 
+## 起動失敗時の備忘録
+
+特定のフォルダで`claude`コマンドの実行にする場合、下記ファイルを削除すると起動した
+
+フォルダ : `C:\Users\%USERPROFILE%`
+ファイル : `.claude.json`と`.claude.json.backup`
+
 ## VSCodeの拡張機能
 
 [Claude Code for VSCode](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
