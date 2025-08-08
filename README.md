@@ -22,9 +22,9 @@ claude
 
 特定のフォルダで`claude`コマンドの実行に失敗する場合、下記対象ファイルを削除すると起動した
 
-対象ファイルがあるフォルダ : `C:\Users\%USERNAME%`
-
 対象ファイル : `.claude.json`と`.claude.json.backup`
+
+対象ファイルがあるフォルダ : `C:\Users\%USERNAME%`
 
 ## VSCodeの拡張機能
 
