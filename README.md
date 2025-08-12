@@ -30,7 +30,7 @@ claude
 
 [Claude Code for VSCode](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
 
-## `/init` コマンドで`CLAUDE.md`作成
+## はじめに `/init` コマンドで`CLAUDE.md`作成
 
 Claude Codeは、一度終了すると内容がリセットされる  
 継続させたい場合は`CLAUDE.md`に保存する
@@ -41,6 +41,15 @@ Claude Codeは、一度終了すると内容がリセットされる
 ```
 
 ## Claude Code よく使うコマンド一覧
+
+### モード切り替え
+
+| コマンド | モード | 説明　|
+|---------|------|------|
+| `Shift + Tab` x 1  | 自動許可モード | 明示的に許可されていたり、一度許可されたコマンドは自動で許可するモード
+| `Shift + Tab` x 2  | プランモード | ファイルを編集せずに、Readonlyで設計を練る |
+
+
 
 ### ファイル操作
 
