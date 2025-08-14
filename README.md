@@ -46,14 +46,14 @@ Claude Codeは、一度終了すると内容がリセットされる
 2. PC全体で共有してほしいルール
 3. スコープによって設定するルール
 
+[Claude Codeの「すぐルール忘れる問題」を解決する超効果的な方法を見つけた気がする](https://zenn.dev/sesere/articles/0420ecec9526dc)
+
 ## hooks
 
 トリガーが発火すると何かさせたいときに使う  
 ex) 作業が終わったら通知させる
 
 **ただし、セキュリティ的に危ないこともできるので注意！！**
-
-## カスタムコマンド
 
 ## MCPの設定
 
@@ -157,9 +157,7 @@ pip install uv
 }
 ```
 
-### Cipher
 
-※ OpenAIのAPIが必要そうなので保留
 
 ## Claude Code よく使うコマンド一覧
 
@@ -232,3 +230,12 @@ pip install uv
 [これ読めばOK。私が使ってるものだけの、Claude Code チュートリアル](https://zenn.dev/pepabo/articles/898cdc4839acb8)
 
 [速習 Claude Code](https://zenn.dev/mizchi/articles/claude-code-cheatsheet)
+
+## Pending
+
+以下、OpenAIのAPIを使用するため保留
+
+CodeRabbitの導入  
+[もう初回コードレビューはAIに任せる時代になった - CodeRabbit -](https://zenn.dev/minedia/articles/7928ef7545b393)
+
+Cipherの導入
