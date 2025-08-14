@@ -134,6 +134,10 @@ ex) 作業が終わったら通知させる
 
 セマンティックコード解析
 
+[AIコーディングの常識が変わる！Claudeを"覚醒"させる知性、「Serena」徹底解説](https://note.com/kyutaro15/n/n61a8825fe303)
+
+[Claude Codeを10倍賢くする無料ツール「Serena」の威力とトークン効率化術](https://zenn.dev/sc30gsw/articles/ff81891959aaef)
+
 #### 前提条件
 
 - Python
@@ -157,6 +161,11 @@ pip install uv
 }
 ```
 
+#### 初期化コマンド
+
+```bash
+/mcp__serena__initial_instructions
+```
 
 
 ## Claude Code よく使うコマンド一覧
@@ -232,6 +241,10 @@ pip install uv
 [速習 Claude Code](https://zenn.dev/mizchi/articles/claude-code-cheatsheet)
 
 ## Pending
+
+GitHubとの連携はさせたが使い方までは未調査
+
+[GitGuardian](https://docs.gitguardian.com/internal-monitoring/integrate-sources/vcs-integrations/github)
 
 以下、OpenAIのAPIを使用するため保留
 
