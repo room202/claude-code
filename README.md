@@ -59,15 +59,15 @@ ex) 作業が終わったら通知させる
 
 ### 全体に設定
 
-VSCode  
+#### VSCode
 `C:\Users\%USERPROFILE%\AppData\Roaming\Code\User\mcp.json`
 
-Claude Code  
+#### Claude Code
 `C:\Users\%USERPROFILE%\.claude.json`
 
 ### プロジェクト毎個別に設定
 
-VSCode  
+#### VSCode
 フォルダ内に`.vscode\mcp.json`を新規作成してMCPの設定を書く
 
 テンプレート
@@ -80,7 +80,7 @@ VSCode
 }
 ```
 
-Claude Code  
+#### Claude Code
 フォルダ内に`.mcp.json`を新規作成してMCPの設定を書く
 
 テンプレート  
