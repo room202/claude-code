@@ -1,19 +1,29 @@
 {
   "mcpServers": {
     "context7": {
-      "command": "cmd",
-      "args": ["/c", "npx", "-y", "@upstash/context7-mcp@latest"]
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "env": {}
     },
     "serena": {
-			"command": "uvx",
-			"args": [
-				"--from",
-				"git+https://github.com/oraios/serena",
-				"serena",
-				"start-mcp-server",
-				"--context",
-				"ide-assistant"
-			]
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena-mcp-server",
+        "--context",
+        "ide-assistant",
+        "--enable-web-dashboard",
+        "false",
+        "--project",
+        "C:/Workspace/GitHub/room202/git-practice1"
+      ],
+      "env": {}
     }
   }
 }
