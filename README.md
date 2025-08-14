@@ -55,22 +55,22 @@ ex) 作業が終わったら通知させる
 
 ## カスタムコマンド
 
-## MCPの設定 (VSCode)
+## MCPの設定
 
 ### 全体に設定
 
+VSCode  
 `C:\Users\%USERPROFILE%\AppData\Roaming\Code\User\mcp.json`
+
+Claude Code  
+`C:\Users\%USERPROFILE%\.claude.json`
 
 ### プロジェクト毎個別に設定
 
-プロジェクトフォルダ内に  
-VSCodeなら`.vscode\mcp.json`を新規作成  
-Claude Codeなら`.mcp.json`を新規作成  
-MCPの設定を書く
+VSCode  
+フォルダ内に`.vscode\mcp.json`を新規作成してMCPの設定を書く
 
 テンプレート
-
-`VSCode`
 
 ```json
 {
@@ -80,9 +80,13 @@ MCPの設定を書く
 }
 ```
 
-`Claude Code`
+Claude Code  
+フォルダ内に`.mcp.json`を新規作成してMCPの設定を書く
 
-ファイル : `~/.claude/settings.local.json`
+テンプレート  
+※少し設定が必要
+
+ファイル : `.claude/settings.local.json`
 
 下記を追加
 
@@ -90,7 +94,7 @@ MCPの設定を書く
 "enableAllProjectMcpServers": true,
 ```
 
-ファイル : `~/.mcp.json`
+ファイル : `.mcp.json`
 
 ```json
 {
