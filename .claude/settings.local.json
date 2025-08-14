@@ -1,0 +1,12 @@
+{
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(claude doctor)",
+      "Bash(claude mcp:*)",
+      "WebFetch(domain:nextjs.org)"
+    ],
+    "deny": []
+  }
+}

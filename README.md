@@ -40,6 +40,123 @@ Claude Codeは、一度終了すると内容がリセットされる
 /init
 ```
 
+## ルールの設定方法
+
+1. プロジェクト内だけで適用するルール
+2. PC全体で共有してほしいルール
+3. スコープによって設定するルール
+
+## hooks
+
+トリガーが発火すると何かさせたいときに使う  
+ex) 作業が終わったら通知させる
+
+**ただし、セキュリティ的に危ないこともできるので注意！！**
+
+## カスタムコマンド
+
+## MCPの設定 (VSCode)
+
+### 全体に設定
+
+`C:\Users\%USERPROFILE%\AppData\Roaming\Code\User\mcp.json`
+
+### プロジェクト毎個別に設定
+
+プロジェクトフォルダ内に  
+VSCodeなら`.vscode\mcp.json`を新規作成  
+Claude Codeなら`.mcp.json`を新規作成  
+MCPの設定を書く
+
+テンプレート
+
+`VSCode`
+
+```json
+{
+    "servers": {
+
+    }
+}
+```
+
+`Claude Code`
+
+ファイル : `~/.claude/settings.local.json`
+
+下記を追加
+
+```json
+"enableAllProjectMcpServers": true,
+```
+
+ファイル : `~/.mcp.json`
+
+```json
+{
+    "mcpServers": {
+
+    }
+}
+```
+
+## Context7 + Serena + Cipher
+
+[Claude CodeでMCPツール（Context7、Serena、Cipher）を活用してAIコーディングを次のレベルへ](https://qiita.com/sukimaengineer/items/845ad14a3ec2d3c39930)
+
+[Claude Code で Context7、Serena、Cipher を同時使用する際の注意事項](https://qiita.com/sukimaengineer/items/9a0a10d23c86f2a2e850)
+
+[Claude Code を更に賢く - serena と cipher を mcp で使う](https://zenn.dev/sho7650/articles/5d9b46a119a08f)
+
+### Context7
+
+最新ドキュメントの自動取得
+
+#### 前提条件
+
+- [Node.js 18+](https://github.com/room202/react?tab=readme-ov-file#volta-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+
+```json
+"context7": {
+    "command": "npx",
+    "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+    ]
+}
+```
+
+### Serena
+
+セマンティックコード解析
+
+#### 前提条件
+
+- Python
+
+```bash
+pip install uv
+```
+
+```json
+"serena": {
+    "command": "uvx",
+    "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        " --enable-web-dashboard false",
+        "ide-assistant"
+    ]
+}
+```
+
+### Cipher
+
+※ OpenAIのAPIが必要そうなので保留
+
 ## Claude Code よく使うコマンド一覧
 
 ### ファイル操作
