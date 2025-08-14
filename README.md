@@ -112,25 +112,27 @@ ex) 作業が終わったら通知させる
 
 [Claude Code を更に賢く - serena と cipher を mcp で使う](https://zenn.dev/sho7650/articles/5d9b46a119a08f)
 
-### Context7
+## Context7
 
 最新ドキュメントの自動取得
 
-#### 前提条件
+### 前提条件
 
 - [Node.js 18+](https://github.com/room202/react?tab=readme-ov-file#volta-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 
-```json
-"context7": {
-    "command": "npx",
-    "args": [
-        "-y",
-        "@upstash/context7-mcp@latest"
-    ]
-}
+### MCPの設定
+
+コマンドでの追加
+
+```bash
+# グローバル設定に追加
+claude mcp add -s user context7 -- npx -y @upstash/context7-mcp@latest
+
+# プロジェクト共有設定として追加
+claude mcp add -s project context7 -- npx -y @upstash/context7-mcp@latest
 ```
 
-### Serena
+## Serena
 
 セマンティックコード解析
 
@@ -138,7 +140,9 @@ ex) 作業が終わったら通知させる
 
 [Claude Codeを10倍賢くする無料ツール「Serena」の威力とトークン効率化術](https://zenn.dev/sc30gsw/articles/ff81891959aaef)
 
-#### 前提条件
+[Serena有効化でClaude Code起動時にWebに飛ばされるのをやめる](https://zenn.dev/soramarjr/articles/c0210f128a4d2a)
+
+### 前提条件
 
 - Python
 
@@ -146,27 +150,23 @@ ex) 作業が終わったら通知させる
 pip install uv
 ```
 
-```json
-"serena": {
-    "command": "uvx",
-    "args": [
-        "--from",
-        "git+https://github.com/oraios/serena",
-        "serena",
-        "start-mcp-server",
-        "--context",
-        " --enable-web-dashboard false",
-        "ide-assistant"
-    ]
-}
+### MCPの設定
+
+コマンドでの追加
+
+```bash
+# グローバル設定に追加
+claude mcp add -s user serena -- uvx --from git+https://github.com/oraios/serena serena-mcp-server --context ide-assistant  --enable-web-dashboard false --project $(pwd)
+
+# プロジェクト共有設定として追加
+claude mcp add -s project serena -- uvx --from git+https://github.com/oraios/serena serena-mcp-server --context ide-assistant  --enable-web-dashboard false --project $(pwd)
 ```
 
-#### 初期化コマンド
+### 初期化コマンド
 
 ```bash
 /mcp__serena__initial_instructions
 ```
-
 
 ## Claude Code よく使うコマンド一覧
 
@@ -176,8 +176,6 @@ pip install uv
 |---------|------|------|
 | `Shift + Tab` x 1  | 自動許可モード | 明示的に許可されていたり、一度許可されたコマンドは自動で許可するモード
 | `Shift + Tab` x 2  | プランモード | ファイルを編集せずに、Readonlyで設計を練る |
-
-
 
 ### ファイル操作
 
