@@ -55,7 +55,33 @@ ex) 作業が終わったら通知させる
 
 **ただし、セキュリティ的に危ないこともできるので注意！！**
 
+## カスタムコマンド
+
+下記フォルダを作成する
+
+```bash
+.claude/commands
+```
+
+コマンド(プロンプト)ファイルを作る
+
+```bash
+optimized.md
+```
+
+Claudeコマンドで実行
+
+```bash
+/project:optimize
+```
+
 ## MCPの設定
+
+MCPエラーをデバッグモードで確認
+
+```bash
+claude --mcp-debug
+```
 
 ### 全体に設定
 
@@ -169,6 +195,22 @@ claude mcp add -s project serena -- uvx --from git+https://github.com/oraios/ser
 ```
 
 ## Claude Code よく使うコマンド一覧
+
+※ 危険 : 権限確認をスキップする秘伝のコマンド
+
+```bash
+claude --dangerously-skip-permissions
+```
+
+考えさせる、深く考えさせる
+
+Claude Code実行中のコマンド欄に下記を入力
+
+```bash
+think <プロンプト>
+think hard <プロンプト>
+ultrathink <プロンプト>
+```
 
 ### モード切り替え
 
