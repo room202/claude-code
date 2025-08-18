@@ -130,6 +130,40 @@ claude --mcp-debug
 }
 ```
 
+## Supabase
+
+https://supabase.com/docs/guides/getting-started/mcp
+
+https://supabase.com/
+
+https://supabase.com/docs
+
+### 1. アクセストークンを取得する
+
+https://supabase.com/dashboard/account/tokens
+
+### 2. MCP追加コマンド
+
+```bash
+claude mcp add supabase -s local -e SUPABASE_ACCESS_TOKEN=your_token_here -- npx -y @supabase/mcp-server-supabase@latest
+```
+
+### 3. 追加できたか確認
+
+プロンプト
+
+```
+supabaseのmcpの設定をしたので接続できているか確認して
+```
+
+### 4. テストでテーブル作成
+
+プロンプト
+
+```
+MCPを試したいので、どことも繋がっていないテーブルを作って
+```
+
 ## Context7 + Serena + Cipher
 
 [Claude CodeでMCPツール（Context7、Serena、Cipher）を活用してAIコーディングを次のレベルへ](https://qiita.com/sukimaengineer/items/845ad14a3ec2d3c39930)
