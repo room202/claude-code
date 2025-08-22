@@ -75,6 +75,12 @@ Claudeコマンドで実行
 /project:optimize
 ```
 
+## レビュー
+
+```bash
+/review
+```
+
 ## MCPの設定
 
 MCPエラーをデバッグモードで確認
