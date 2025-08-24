@@ -141,6 +141,8 @@ claude --mcp-debug
 https://github.com/SuperClaude-Org/SuperClaude_Framework
 
 
+https://qiita.com/tomada/items/2eb1b0623c9f59424235
+
 ## Supabase
 
 https://supabase.com/docs/guides/getting-started/mcp
