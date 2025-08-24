@@ -138,8 +138,7 @@ claude --mcp-debug
 
 ## SuperClaude
 
-https://github.com/SuperClaude-Org/SuperClaude_Framework
-
+[公式GitHub](https://github.com/SuperClaude-Org/SuperClaude_Framework)
 
 [SuperClaude とは？Claude Codeのコード品質を30%改善できた神ツールの完全ガイド！](https://qiita.com/tomada/items/2eb1b0623c9f59424235)
 
