@@ -136,6 +136,11 @@ claude --mcp-debug
 }
 ```
 
+## SuperClaude
+
+https://github.com/SuperClaude-Org/SuperClaude_Framework
+
+
 ## Supabase
 
 https://supabase.com/docs/guides/getting-started/mcp
