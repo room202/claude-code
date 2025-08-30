@@ -216,10 +216,18 @@ claude mcp add -s project context7 -- npx -y @upstash/context7-mcp@latest
 
 ### 前提条件
 
-- Python
+- Python + uv + uvx
+
+Windows
 
 ```bash
-pip install uv
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+macOS
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 ### MCPの設定
