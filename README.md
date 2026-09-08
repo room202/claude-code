@@ -8,8 +8,29 @@
 
 ## インストール
 
+### macOS / Linux
+
 ```bash
-npm install -g @anthropic-ai/claude-code
+# 安定版のインストール
+curl -fsSL https://claude.ai/install.sh | bash -s stable
+
+# 最新版のインストール
+curl -fsSL https://claude.ai/install.sh | bash
+
+# 特定バージョン
+curl -fsSL https://claude.ai/install.sh | bash -s 2.1.123
+```
+
+### Windows11 WSL2
+
+```bash
+
+```
+
+## Claude Codeのバージョン確認
+
+```bash
+claude --version
 ```
 
 ## Claude Codeの起動
